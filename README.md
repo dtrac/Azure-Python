@@ -1,6 +1,6 @@
 # Azure Python Scripts 🚀
 
-This repository contains Python scripts for interacting with **Azure Key Vault** and **Azure Management** APIs. The scripts authenticate to Azure using **service principals** and retrieve secrets from Key Vault and list Azure subscriptions.
+This repository contains Python scripts for interacting with **Azure Storage**, **Azure Key Vault** and **Azure Management** APIs. The scripts authenticate to Azure using **service principals** and retrieve secrets from Key Vault and list Azure subscriptions.
 
 ## Prerequisites 📋
 
@@ -31,7 +31,7 @@ To run these scripts, you'll need:
 1. azure-keyvault.py - Access a Secret from Azure Key Vault
 This script authenticates using DefaultAzureCredential, connects to Azure Key Vault, and retrieves a secret.
 2. azure-auth.py - This script uses a service principal to authenticate with Azure and lists available subscriptions.
-
+3. azure-storage.py - This script uses a service principal to connect to Azure storage and retrieve a blob from a container.
 ## Troubleshooting ⚠️
 Make sure your Azure service principal has the necessary permissions to access the Key Vault and list subscriptions.
 Verify that your .env file is properly configured with the correct values.
